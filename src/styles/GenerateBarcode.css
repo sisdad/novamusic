@@ -1,0 +1,390 @@
+.barcode-page{
+
+    min-height:100vh;
+
+    background:#f5f7fb;
+
+    padding:40px 20px;
+
+}
+
+
+
+.barcode-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.barcode-header{
+
+    background:#0b1f3a;
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:18px 18px 0 0;
+
+}
+
+
+
+.barcode-header h1{
+
+    font-size:30px;
+
+    margin:0;
+
+}
+
+
+
+.barcode-header p{
+
+    opacity:.8;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+.generator-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:0 0 18px 18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.generator-card label{
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    display:block;
+
+}
+
+
+
+.number-box-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:20px 0;
+
+}
+
+
+
+.qr-number-input{
+
+    width:90px;
+
+    height:90px;
+
+    text-align:center;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    border:2px solid #0b1f3a;
+
+    border-radius:15px;
+
+    outline:none;
+
+    color:#0b1f3a;
+
+    background:#f8f9fa;
+
+}
+
+
+
+.qr-number-input:focus{
+
+    box-shadow:0 0 0 4px rgba(11,31,58,.15);
+
+}
+
+
+
+.input-icon{
+
+    background:#0b1f3a;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:8px 0 0 8px;
+
+}
+
+
+
+.input-group input{
+
+    height:48px;
+
+}
+
+
+
+
+
+.generate-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0b1f3a;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+
+
+.generate-btn:hover{
+
+    opacity:.9;
+
+}
+
+
+
+
+
+.preview-section{
+
+    margin-top:40px;
+
+}
+
+
+
+.qr-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+
+
+.qr-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.qr-number{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+
+
+.qr-icon{
+
+    font-size:50px;
+
+    color:#0b1f3a;
+
+    margin:15px;
+
+}
+
+
+
+.qr-card p{
+
+    font-weight:bold;
+
+    font-size:13px;
+
+    word-break:break-all;
+
+}
+
+.clear-btn{
+
+    margin-top:15px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#dc3545;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+
+.clear-btn:hover{
+
+    background:#bb2d3b;
+
+}
+
+
+.clear-btn:disabled{
+
+    opacity:0.6;
+
+    cursor:not-allowed;
+
+}
+.barcode-stats{
+
+display:flex;
+gap:20px;
+margin-bottom:30px;
+
+}
+
+
+.stat-card{
+
+flex:1;
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+.stat-card h3{
+
+font-size:35px;
+
+margin:10px;
+
+}
+
+
+
+.modal-back{
+
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:rgba(0,0,0,.6);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+
+}
+
+
+
+.delete-modal{
+
+background:white;
+width:400px;
+padding:30px;
+border-radius:15px;
+text-align:center;
+
+}
+
+
+
+.modal-actions{
+
+display:flex;
+justify-content:center;
+gap:20px;
+
+}
+
+
+
+.cancel-btn,
+.confirm-btn{
+
+padding:10px 25px;
+border:none;
+border-radius:8px;
+
+}
+
+
+.confirm-btn{
+
+background:#dc3545;
+color:white;
+
+}
+
+
+.cancel-btn{
+
+background:#6c757d;
+color:white;
+
+}

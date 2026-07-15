@@ -1,0 +1,168 @@
+/* ================================
+   Admin Upload Page
+================================ */
+
+.upload-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1d4ed8, #2563eb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+
+    padding: 0 60px;         /* White space around the form */
+           /* Space above and below */
+}
+.upload-page .container {
+    padding: 40px 20px;
+}
+
+.upload-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.upload-header h2 {
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 8px;
+}
+
+.upload-header p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* ================================
+   Form
+================================ */
+
+.form-label {
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    padding: 12px;
+    transition: all .3s ease;
+     width: 100%;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 .2rem rgba(37, 99, 235, .2);
+}
+
+.input-group-text {
+    border-radius: 10px 0 0 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+}
+
+/* ================================
+   Upload Boxes
+================================ */
+
+.upload-box {
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: .3s;
+}
+
+.upload-box:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.upload-box input[type=file] {
+    margin-top: 15px;
+}
+
+.file-name {
+    display: block;
+    margin-top: 12px;
+    color: #16a34a;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* ================================
+   Button
+================================ */
+
+.upload-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.upload-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, .35);
+}
+
+.upload-btn:active {
+    transform: scale(.98);
+}
+
+/* ================================
+   Card Animation
+================================ */
+
+.upload-card {
+    animation: fadeIn .6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 768px) {
+
+    .upload-page {
+        padding: 20px 10px;
+    }
+
+    .upload-card {
+        border-radius: 15px;
+    }
+
+    .upload-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .upload-btn {
+        font-size: 16px;
+    }
+}
