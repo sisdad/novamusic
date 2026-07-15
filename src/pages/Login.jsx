@@ -9,7 +9,7 @@ import {
   FaEyeSlash,
   FaSpinner,
 } from "react-icons/fa";
-import "../styles/Login.css";
+import "../styles/login.css";
 export default function Login() {
   const navigate = useNavigate();
   const SERVER_URL = import.meta.env.VITE_SERVER_URL;
